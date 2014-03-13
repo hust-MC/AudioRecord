@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/softname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/appName"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/usrtype"
+            style="@style/textview_style"
+            android:text="请选择用户类别:" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:drawSelectorOnTop="true"
+            android:layoutMode="opticalBounds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_style"
+            android:text="@string/IP" />
+
+        <EditText
+            android:id="@+id/inputIP"
+            style="@style/edittext_style"
+            android:hint="@string/inputIP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button"
+            android:text="退出" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/start_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record Start"
+            android:textColor="#DC143C"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/end_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record_Stop"
+            android:textColor="#00008B"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

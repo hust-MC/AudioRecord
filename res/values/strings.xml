@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AudioRecord</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="appName">多人视频通信</string>
+    <string name="IP">IP地址</string>
+    <string name="inputIP">请输入IP地址</string>
+</resources>
